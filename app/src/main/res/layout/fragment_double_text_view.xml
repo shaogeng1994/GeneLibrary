@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <com.shao.genelibrary.widget.combination.DoubleTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:dtv_first_text_size="16sp"
+        app:dtv_first_text_color="@android:color/holo_red_light"
+        app:dtv_first_text="First"
+        app:dtv_second_text_size="12sp"
+        app:dtv_second_text_color="@color/colorPrimary"
+        app:dtv_second_text="Second"
+        app:dtv_text_space="50dp">
+
+    </com.shao.genelibrary.widget.combination.DoubleTextView>
+
+    <com.shao.genelibrary.widget.combination.DoubleTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:dtv_first_text_size="16sp"
+        app:dtv_first_text_color="@android:color/holo_red_light"
+        app:dtv_first_text="First"
+        app:dtv_second_text_size="12sp"
+        app:dtv_second_text_color="@color/colorPrimary"
+        app:dtv_second_text="Second"
+        app:dtv_text_space="50dp"
+        android:orientation="vertical">
+
+    </com.shao.genelibrary.widget.combination.DoubleTextView>
+</LinearLayout>

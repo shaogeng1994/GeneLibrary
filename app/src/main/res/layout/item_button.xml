@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+    <data>
+        <variable
+            name="mainItemViewModel"
+            type="com.shao.genelibrary.sample.MainItemViewModel" />
+    </data>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@{mainItemViewModel.title}"
+        android:textAllCaps="false"
+        android:onClick="@{() -> mainItemViewModel.onClick()}"/>
+</layout>
