@@ -27,7 +27,8 @@
         app:dtv_second_text_color="@color/colorPrimary"
         app:dtv_second_text="Second"
         app:dtv_text_space="50dp"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        android:gravity="center">
 
     </com.shao.genelibrary.widget.combination.DoubleTextView>
 </LinearLayout>

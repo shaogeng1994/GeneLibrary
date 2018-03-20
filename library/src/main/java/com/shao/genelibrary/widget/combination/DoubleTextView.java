@@ -18,6 +18,7 @@ public class DoubleTextView extends LinearLayout {
 
     private TextView firstTextView;
     private TextView secondTextView;
+    float space = 0;
 
 
     public DoubleTextView(Context context) {
@@ -38,7 +39,6 @@ public class DoubleTextView extends LinearLayout {
 
         float firstTextSize = 0;
         float secondTextSize = 0;
-        float space = 0;
         int firstTextColor = 0;
         int secondTextColor = 0;
         CharSequence firstText = "";
@@ -63,11 +63,16 @@ public class DoubleTextView extends LinearLayout {
         firstTextView.setText(firstText);
         firstTextView.setTextSize(TypedValue.COMPLEX_UNIT_PX, firstTextSize);
         firstTextView.setTextColor(firstTextColor);
+        LayoutParams firstParams = new LayoutParams(LayoutParams.WRAP_CONTENT, LayoutParams.WRAP_CONTENT);
+        firstTextView.setLayoutParams(firstParams);
+
 
         secondTextView = new TextView(context);
         secondTextView.setText(secondText);
         secondTextView.setTextSize(TypedValue.COMPLEX_UNIT_PX, secondTextSize);
         secondTextView.setTextColor(secondTextColor);
+        LayoutParams secondParams = new LayoutParams(LayoutParams.WRAP_CONTENT, LayoutParams.WRAP_CONTENT);
+        secondTextView.setLayoutParams(secondParams);
 
 
         addView(firstTextView);
@@ -79,6 +84,7 @@ public class DoubleTextView extends LinearLayout {
         } else if (getOrientation() == HORIZONTAL) {
             layoutParams.setMargins(layoutParams.leftMargin, layoutParams.topMargin, (int) space, layoutParams.bottomMargin);
         }
+
     }
 
 
